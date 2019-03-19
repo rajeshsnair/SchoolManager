@@ -1,0 +1,76 @@
+<%@ page session="false" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
+
+
+
+			<div class="cols-sm-10">
+		<div class="input-group">
+		<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+		<form:input path="firstname"  class="form-control" placeholder="Enter First Name" required="required" data-minlength="2" />
+		</div>
+		</div>
+		<br>
+		
+
+			<div class="cols-sm-10">
+				<div class="input-group">
+		<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+		<form:input path="lastname" class="form-control" placeholder="Enter Last Name" required="required" data-minlength="2" />
+		</div>
+		</div>
+		<br>
+		
+		<form:errors path="username" class="error-message" />
+		<div class="cols-sm-10">
+				<div class="input-group">
+		<span class="input-group-addon"><i class="fa fa-child fa" aria-hidden="true"></i></span>
+		<form:input path="username"  class="form-control" placeholder="Enter User Name" required="required" data-minlength="2" />
+		</div>
+		</div>
+		<br>
+		
+		<form:errors path="password" class="error-message" />
+				<div class="cols-sm-10">
+				<div class="input-group">
+				<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+		<form:password path="password" class="form-control" placeholder="Enter Password" required="required" data-minlength="6" />
+		</div>
+		</div>
+		<br>
+		
+		<form:errors path="email" class="error-message" />
+		<div class="cols-sm-10">
+				<div class="input-group">
+				<span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+		<form:input path="email" class="form-control" placeholder="Enter Email Id" required="required" data-minlength="6"/>		
+		</div>
+		</div>
+		<br>
+		
+			<form:errors path="designation" class="error-message" />
+			<div class="cols-sm-10">
+				<div class="input-group">
+				<span class="input-group-addon"><i class="fa fa-graduation-cap fa" aria-hidden="true"></i></span>
+		<form:input path="designation" class="form-control" placeholder="Enter Designation" required="required" data-minlength="2" />
+		</div>
+		</div>
+		<br>
+		
+			<form:errors path="phone" class="error-message" />
+			<div class="cols-sm-10">
+				<div class="input-group">
+				<span class="input-group-addon"><i class="fa fa-phone-square fa" aria-hidden="true"></i></span>
+		<form:input path="phone" class="form-control" placeholder="Enter Phone Number" required="required" data-minlength="2" pattern="^[0-9]*$" />
+		</div>
+		</div>
+		<br>
+		
+		<form:label  class="cols-sm-2 control-label" path="role">Role</form:label>
+		<form:select path="role" class="form-control">
+		<form:option value="Operator" label="Operator" />		
+		<form:option value="Admin" label="Admin" />			
+		</form:select>
+
+
+                         

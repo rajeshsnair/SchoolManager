@@ -1,0 +1,120 @@
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>SchoolManager</title>
+
+</head>
+
+<body>
+
+<!-- Text input-->
+
+<div class="form-group">
+  <form:label class="col-md-4 control-label" path="adm_no">Admission No</form:label>  
+    <div class="col-md-6 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon"></i></span>
+  <form:input name="adm_no" path="adm_no" class="form-control"
+		placeholder="Enter Admission No" type="text" required="required"/>
+    </div>
+  </div>
+</div>
+
+
+<div class="form-group">
+  <form:label class="col-md-4 control-label" path="firstname">First Name</form:label>  
+    <div class="col-md-6 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon"></i></span>
+  <form:input name="firstname" path="firstname" class="form-control"
+		placeholder="Enter First Name" type="text" required="required"/>
+    </div>
+  </div>
+</div>
+
+<div class="form-group">
+  <form:label class="col-md-4 control-label" path="lastname">Last Name</form:label>  
+    <div class="col-md-6 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon"></i></span>
+  <form:input name="lastname" path="lastname" class="form-control"
+		placeholder="Enter Last Name" type="text" required="required"/>
+    </div>
+  </div>
+</div>
+
+
+<div class="form-group">
+  <form:label path="standard" class="col-md-4 control-label" >Standard</form:label> 
+    <div class="col-md-6 inputGroupContainer">
+    <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon "></i></span>
+  <form:select path="standard" name="standard" class="form-control">
+  		<form:option value="LKG">LKG</form:option>
+		<form:option value="UKG">UKG</form:option>
+		<form:option value="Ist">Ist</form:option>
+		<form:option value="IInd">IInd</form:option>	
+		<form:option value="IIIrd">IIIrd</form:option>	
+		<form:option value="IVth">IVth</form:option>	
+		<form:option value="Vth">Vth</form:option>	
+		<form:option value="VIth">VIth</form:option>	
+		<form:option value="VIIth">VIIth</form:option>	
+		<form:option value="VIIIth">VIIIth</form:option>	
+		<form:option value="IXth">IXth</form:option>	
+		<form:option value="Xth">Xth</form:option>		
+	</form:select>
+    </div>
+  </div>
+</div>
+
+
+<div class="form-group">
+  <form:label class="col-md-4 control-label" path="dob">Date of Birth</form:label>  
+    <div class="col-md-6 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon"></i></span>
+  <form:input name="dob" path="dob" class="form-control"
+		placeholder="DD/MM/YYYY" type="text" required="required"/>
+    </div>
+  </div>
+</div>
+
+<div class="form-group">
+  <form:label class="col-md-4 control-label" path="sex">Sex</form:label>  
+    <div class="col-md-6 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon"></i></span>
+  <form:select path="sex" name="sex" class="form-control">
+  		<form:option value="M">Male</form:option>
+		<form:option value="F">Female</form:option>	
+	</form:select>
+    </div>
+  </div>
+</div>
+
+   <div class="form-group">
+  <form:label class="col-md-4 control-label" path="guardian_name">Guardian Name</form:label>  
+    <div class="col-md-6 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon"></i></span>
+  <form:input name="guardian_name" path="guardian_name" class="form-control"
+		placeholder="Enter Guardian's Name" type="text" required="required"/>
+    </div>
+  </div>
+</div>
+
+ <div class="form-group">
+  <form:label class="col-md-4 control-label" path="contact">Emergency Contact</form:label>  
+    <div class="col-md-6 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon"></i></span>
+  <form:input name="contact" path="contact" class="form-control"
+		placeholder="Enter Contact Number" type="text" required="required" data-minlength="6"/>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

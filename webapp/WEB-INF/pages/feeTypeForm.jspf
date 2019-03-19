@@ -1,0 +1,72 @@
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>SchoolManager</title>
+
+</head>
+
+<body>
+
+<!-- Text input-->
+
+<div class="form-group">
+  <form:label class="col-md-4 control-label" path="fee_name">Fee Name</form:label>  
+    <div class="col-md-6 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon"></i></span>
+  <form:input name="fee_name" path="fee_name" class="form-control"
+		placeholder="Enter Fee Name" type="text" required="required"/>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="form-group">
+  <form:label path="fee_type" class="col-md-4 control-label" >Fee Type</form:label> 
+    <div class="col-md-6 inputGroupContainer">
+    <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon "></i></span>
+  <form:select path="fee_type" name="fee_type" class="form-control">
+  		<form:option value="A">Annual</form:option>
+		<form:option value="M">Monthly</form:option>
+		
+	</form:select>
+    </div>
+  </div>
+</div>
+
+
+
+<%-- 
+<div class="form-group row">
+  <form:label class="col-md-4 control-label" path="fee_standard">Standards to Apply</form:label>  
+</div>
+
+<div class="form-group row">
+  <form:label class="col-md-1" path="fee_standard"> LKG</form:label>  <form:checkbox  path="fee_standard" name="fee_standardukg" value="LKG" class="col-md-1" checked="checked"/>
+    <form:label class="col-md-1" path="fee_standard"> UKG</form:label>  <form:checkbox  path="fee_standard" name="fee_standardlkg" value="UKG" class="col-md-1" checked="checked"/>
+  <form:label class="col-md-1" path="fee_standard"> Ist</form:label>  <form:checkbox  path="fee_standard" name="fee_standard1" value="Ist" class="col-md-1" checked="checked"/>
+   <form:label class="col-md-1" path="fee_standard"> IInd</form:label>  <form:checkbox  path="fee_standard" name="fee_standard2" value="IInd" class="col-md-1" checked="checked"/>
+    </div>
+    <div class="form-group row">
+  <form:label class="col-md-1" path="fee_standard"> IIIrd</form:label>  <form:checkbox  path="fee_standard" name="fee_standard3" value="IIIrd" class="col-md-1" checked="checked"/>
+   <form:label class="col-md-1" path="fee_standard"> IVth</form:label>  <form:checkbox  path="fee_standard" name="fee_standard4" value="IVth" class="col-md-1" checked="checked"/>
+  
+   <form:label class="col-md-1" path="fee_standard"> Vth</form:label>  <form:checkbox  path="fee_standard" name="fee_standard5" value="Vth" class="col-md-1" checked="checked"/>
+     <form:label class="col-md-1" path="fee_standard"> VIth</form:label>  <form:checkbox  path="fee_standard" name="fee_standard6" value="VIth" class="col-md-1" checked="checked"/>
+    </div>
+    <div class="form-group row">
+        <form:label class="col-md-1" path="fee_standard"> VIIth</form:label>  <form:checkbox  path="fee_standard" name="fee_standard7" value="VIIth" class="col-md-1" checked="checked"/>
+           <form:label class="col-md-1" path="fee_standard"> VIIIth</form:label>  <form:checkbox  path="fee_standard" name="fee_standard8" value="VIIIth" class="col-md-1" checked="checked"/>
+              <form:label class="col-md-1" path="fee_standard"> IXth</form:label>  <form:checkbox  path="fee_standard" name="fee_standard9" value="IXth" class="col-md-1" checked="checked"/>
+                 <form:label class="col-md-1" path="fee_standard"> Xth</form:label>  <form:checkbox  path="fee_standard" name="fee_standard10" value="Xth" class="col-md-1" checked="checked"/>
+</div>
+ --%>
+
+
+</body>
+</html>
